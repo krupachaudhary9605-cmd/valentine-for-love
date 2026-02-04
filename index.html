@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Valentine’s Day Krik ❤️</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #ff758c, #ff7eb3);
+  color: #fff;
+  text-align: center;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+h1, h2 {
+  animation: fadeIn 2s ease;
+}
+
+.card {
+  background: rgba(255,255,255,0.2);
+  margin: 15px auto;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 500px;
+  animation: slideUp 1.5s ease;
+}
+
+.memories img {
+  width: 90%;
+  border-radius: 20px;
+  margin-top: 15px;
+}
+
+audio {
+  margin-top: 20px;
+}
+
+.heart {
+  position: fixed;
+  top: -10px;
+  font-size: 20px;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to { transform: translateY(100vh); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+</style>
+</head>
+
+<body>
+
+<section>
+  <h1>Happy First Valentine, Krik ❤️</h1>
+  <h2>Our first Valentine, but definitely not the last</h2>
+
+  🎵 <br>
+  <audio controls autoplay loop>
+    <source src="raabta.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+  </audio>
+</section>
+
+<section>
+  <h2>💌 Valentine’s Week for You 💌</h2>
+
+  <div class="card">🌹 <b>Rose Day</b><br>Krik, my love for you blooms more every day.</div>
+  <div class="card">💍 <b>Propose Day</b><br>If loving you is a choice, I choose you—always.</div>
+  <div class="card">🍫 <b>Chocolate Day</b><br>You make my life sweeter just by being in it.</div>
+  <div class="card">🧸 <b>Teddy Day</b><br>If I could, I’d wrap you in hugs forever.</div>
+  <div class="card">🤞 <b>Promise Day</b><br>I promise to stand by you, always.</div>
+  <div class="card">🤗 <b>Hug Day</b><br>This is me hugging you through the screen.</div>
+  <div class="card">💋 <b>Kiss Day</b><br>Saving all my kisses just for you.</div>
+</section>
+
+<section>
+  <h2>💖 A Message for You, Krik 💖</h2>
+  <div class="card">
+    This is our first Valentine,<br>
+    and already my heart knows<br>
+    it found its person in you.<br><br>
+    You are my comfort, my smile,<br>
+    my Raabta in this universe 💫
+  </div>
+</section>
+
+<section class="memories">
+  <h2>📸 Our Memories</h2>
+  <img src="photo1.jpg" alt="Memory 1">
+  <img src="photo2.jpg" alt="Memory 2">
+</section>
+
+<script>
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.className = "heart";
+  heart.innerHTML = "❤️";
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.animationDuration = (3 + Math.random() * 5) + "s";
+  document.body.appendChild(heart);
+
+  setTimeout(() => heart.remove(), 8000);
+}
+setInterval(createHeart, 300);
+</script>
+
+</body>
+</html>
